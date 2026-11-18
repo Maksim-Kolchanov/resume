@@ -38,7 +38,7 @@
 
   .astro { display: grid; grid-template-columns: repeat(4, 1fr) 1.3fr; gap: var(--s2); }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: var(--s3); }
-  .sign .glyph { font: 400 38px/1.1 "Segoe UI Symbol", var(--serif); color: var(--gold); height: 42px; }
+  .sign .glyph { display: flex; align-items: center; height: 44px; font: 400 38px/1 "Segoe UI Symbol", var(--serif); color: var(--gold); }
   .sign .k { font-size: 13px; color: var(--muted); margin-top: var(--s2); }
   .sign .v { font-weight: 700; font-size: 17px; line-height: 1.25; margin: 2px 0 var(--s1); }
   .sign .t { font-size: 14px; color: var(--ink2); line-height: 1.45; }
@@ -47,7 +47,7 @@
   .ring svg { transform: rotate(-90deg); }
   .ring b { position: absolute; inset: 0; display: grid; place-items: center; font: 700 28px/1 var(--sans); color: var(--green); }
   .score .k { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-top: var(--s2); }
-  .score .t { font-size: 13px; color: #b8c4d0; margin-top: var(--s1); line-height: 1.4; }
+  .score .t { font-size: 14px; color: #cfd9e3; margin-top: var(--s1); line-height: 1.45; }
 
   .fit { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
   .fit td { padding: var(--s2) var(--s3); border-top: 1px solid var(--line); vertical-align: top; }
@@ -58,21 +58,21 @@
 
   .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--s5); }
   .proj { display: grid; gap: var(--s2); }
-  .proj a { display: block; text-decoration: none; transition: border-color .2s; }
+  .proj a { display: flex; flex-direction: column; text-decoration: none; transition: border-color .2s; }
   .proj a:hover { border-color: var(--gold); }
   .proj h3 { margin: 0 0 4px; font-size: 18px; }
   .proj p { margin: 0; color: var(--ink2); font-size: 15px; }
-  .proj .go { color: var(--gold); font-size: 14px; font-weight: 600; margin-top: var(--s1); display: inline-block; }
+  .proj .go { color: var(--gold); font-size: 14px; font-weight: 600; margin-top: auto; padding-top: var(--s2); }
   .stack dl { margin: 0; display: grid; gap: var(--s2); }
-  .stack dt { font-size: 13px; color: var(--muted); }
+  .stack dt { font-size: 14px; color: var(--ink2); }
   .stack dd { margin: 2px 0 0; font-weight: 600; }
 
   .close { background: var(--dark); color: #fff; border-radius: var(--r); padding: var(--s5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: center; }
-  .close blockquote { margin: 0; font: italic 22px/1.45 var(--serif); }
+  .close blockquote { margin: 0; font: italic 22px/1.55 var(--serif); }
   .close cite { display: block; margin-top: var(--s2); font: 14px var(--sans); color: #b8c4d0; font-style: normal; }
   .close .verdict { border-left: 3px solid var(--green); padding-left: var(--s3); color: #e6edf3; }
   .close .verdict b { display: block; color: var(--green); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: var(--s1); }
-  footer { margin-top: var(--s4); font-size: 13px; color: var(--muted); }
+  footer { margin-top: var(--s4); font-size: 14px; color: var(--ink2); }
 
   @media (max-width: 900px) {
     .astro { grid-template-columns: 1fr 1fr; }
@@ -117,8 +117,8 @@
     <h2 class="eyebrow">Астрологический профиль кандидата · 22.12.1988</h2>
     <div class="astro">
       <div class="card sign"><div class="glyph">♑</div><div class="k">Знак зодиака</div><div class="v">Козерог</div><div class="t">Доводит до продакшена, а не до демо</div></div>
-      <div class="card sign"><div class="glyph">龍</div><div class="k">Китайский год</div><div class="v">Земляной Дракон</div><div class="t">Берётся за своё и держит слово</div></div>
-      <div class="card sign"><div class="glyph">◆</div><div class="k">Стихия</div><div class="v">Земля</div><div class="t">Считает по аналогам, не по ощущению</div></div>
+      <div class="card sign"><div class="glyph">◉</div><div class="k">Китайский год</div><div class="v">Земляной Дракон</div><div class="t">Берётся за своё и держит слово</div></div>
+      <div class="card sign"><div class="glyph">▽</div><div class="k">Стихия</div><div class="v">Земля</div><div class="t">Считает по аналогам, не по ощущению</div></div>
       <div class="card sign"><div class="glyph">33</div><div class="k">Число пути</div><div class="v">33 / 6</div><div class="t">Системность и ответственность</div></div>
       <div class="card score">
         <div class="ring">
