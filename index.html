@@ -36,7 +36,7 @@
   .links a.main { background: var(--dark); color: #fff; border-color: var(--dark); }
   .links a:hover { border-color: var(--gold); }
 
-  .astro { display: grid; grid-template-columns: repeat(4, 1fr) 1.3fr; gap: var(--s2); }
+  .astro { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.3fr); gap: var(--s2); }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: var(--s3); }
   .sign .glyph { display: flex; align-items: center; height: 44px; font: 400 38px/1 "Segoe UI Symbol", var(--serif); color: var(--gold); }
   .sign .k { font-size: 13px; color: var(--muted); margin-top: var(--s2); }
@@ -56,7 +56,7 @@
   .fit .sg { display: block; font-weight: 400; font-size: 14px; color: var(--gold); }
   .fit td:last-child { color: var(--ink2); }
 
-  .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--s5); }
+  .cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: var(--s5); }
   .proj { display: grid; gap: var(--s2); }
   .proj a { display: flex; flex-direction: column; text-decoration: none; transition: border-color .2s; }
   .proj a:hover { border-color: var(--gold); }
@@ -75,9 +75,9 @@
   footer { margin-top: var(--s4); font-size: 14px; color: var(--ink2); }
 
   @media (max-width: 900px) {
-    .astro { grid-template-columns: 1fr 1fr; }
+    .astro { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .score { grid-column: 1 / -1; }
-    .cols, .close { grid-template-columns: 1fr; gap: var(--s4); }
+    .cols, .close { grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
   }
   @media (max-width: 600px) {
     .wrap { padding: var(--s4) var(--s2) var(--s5); }

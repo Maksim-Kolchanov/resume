@@ -46,7 +46,7 @@
   .links a:hover { border-color: var(--gold); background: rgba(200,169,105,.14); }
   .links a.main:hover { background: #d8bb7c; }
 
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr) 1.25fr; gap: var(--s2); }
+  .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.25fr); gap: var(--s2); }
   .card { background: linear-gradient(160deg, var(--surface2), var(--surface)); border: 1px solid var(--line2);
           border-radius: var(--r); padding: var(--s3); box-shadow: inset 0 1px 0 rgba(255,255,255,.04); }
   .sign .r { display: flex; align-items: center; height: 46px; font: 400 36px/1 var(--rune); color: var(--gold); }
@@ -68,7 +68,7 @@
   .fit .sg { display: block; font: 400 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-top: 4px; }
   .fit td:last-child { color: var(--ink2); }
 
-  .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--s5); }
+  .cols { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: var(--s5); }
   .proj { display: grid; gap: var(--s2); }
   .proj a { display: flex; flex-direction: column; text-decoration: none; transition: border-color .2s, transform .2s; }
   .proj a:hover { border-color: var(--gold); transform: translateY(-2px); }
@@ -91,9 +91,9 @@
   footer a { color: var(--gold); }
 
   @media (max-width: 900px) {
-    .cards { grid-template-columns: 1fr 1fr; }
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .score { grid-column: 1 / -1; }
-    .cols, .close { grid-template-columns: 1fr; gap: var(--s4); }
+    .cols, .close { grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
   }
   @media (max-width: 600px) {
     .wrap { padding: var(--s4) var(--s2) var(--s5); }
