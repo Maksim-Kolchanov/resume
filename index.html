@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Максим Колчанов — Python Backend Developer</title>
-<meta name="description" content="Python Backend Developer: 17 лет в недвижимости, с 2023 года — сервисы на Python. Проекты, стек, контакты.">
+<meta name="description" content="Резюме с астрологическим профилем: Козерог, Земляной Дракон, 98.7% HR Compatibility">
 <meta property="og:title" content="Максим Колчанов — Python Backend Developer">
-<meta property="og:description" content="Python Backend Developer · Екатеринбург · проекты, стек, контакты">
+<meta property="og:description" content="Козерог · Земляной Дракон · 98.7% HR Compatibility">
 <meta property="og:image" content="https://maksim-kolchanov.github.io/resume/photo.jpg">
 <style>
   :root {
@@ -36,14 +36,14 @@
   .links a.main { background: var(--dark); color: #fff; border-color: var(--dark); }
   .links a:hover { border-color: var(--gold); }
 
-  .astro { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s2); }
+  .astro { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.3fr); gap: var(--s2); }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: var(--s3); }
   .sign .glyph { display: flex; align-items: center; height: 44px; font: 400 38px/1 "Segoe UI Symbol", var(--serif); color: var(--gold); }
   .sign .k { font-size: 13px; color: var(--muted); margin-top: var(--s2); }
   .sign .v { font-weight: 700; font-size: 17px; line-height: 1.25; margin: 2px 0 var(--s1); }
   .sign .t { font-size: 14px; color: var(--ink2); line-height: 1.45; }
   .score { background: var(--dark); color: #fff; border-color: var(--dark); display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .ring { position: relative; width: 128px; height: 128px; margin: 0 auto var(--s1); }
+  .ring { position: relative; width: 128px; height: 128px; }
   .ring svg { transform: rotate(-90deg); }
   .ring b { position: absolute; inset: 0; display: grid; place-items: center; font: 700 28px/1 var(--sans); color: var(--green); }
   .score .k { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-top: var(--s2); }
@@ -62,25 +62,10 @@
   .proj a:hover { border-color: var(--gold); }
   .proj h3 { margin: 0 0 4px; font-size: 18px; }
   .proj p { margin: 0; color: var(--ink2); font-size: 15px; }
-  .proj .go { color: var(--gold); font-size: 15px; font-weight: 700; letter-spacing: .04em; margin-top: auto; padding-top: var(--s3); }
+  .proj .go { color: var(--gold); font-size: 14px; font-weight: 600; margin-top: auto; padding-top: var(--s2); }
   .stack dl { margin: 0; display: grid; gap: var(--s2); }
   .stack dt { font-size: 14px; color: var(--ink2); }
   .stack dd { margin: 2px 0 0; font-weight: 600; }
-
-  .proj a { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: var(--s3);
-            box-shadow: 0 1px 2px rgba(20,38,58,.04); transition: border-color .2s, transform .2s, box-shadow .2s; }
-  .proj a:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 10px 26px rgba(20,38,58,.10); }
-  .fit tbody tr { transition: background .2s; }
-  .fit tbody tr:hover { background: rgba(168,121,47,.045); }
-
-  .nosh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); }
-  .nosh .card { position: relative; padding-top: var(--s4); }
-  .nosh .card::before { content: attr(data-n); position: absolute; top: var(--s3); left: var(--s3);
-                        font: 700 12px/1 var(--sans); letter-spacing: .16em; color: var(--gold); }
-  .nosh b { display: block; font: 700 18px/1.3 var(--serif); margin: 0 0 var(--s1); }
-  .nosh p { margin: 0; color: var(--ink2); font-size: 15px; line-height: 1.5; }
-  .nosh .kick { margin-top: var(--s3); font-size: 15px; color: var(--ink2); }
-  .nosh .kick em { color: var(--ink); font-style: normal; font-weight: 600; }
 
   .close { background: var(--dark); color: #fff; border-radius: var(--r); padding: var(--s5); display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: center; }
   .close blockquote { margin: 0; font: italic 22px/1.55 var(--serif); }
@@ -93,7 +78,6 @@
     .astro { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .score { grid-column: 1 / -1; }
     .cols, .close { grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
-    .nosh { grid-template-columns: minmax(0, 1fr); }
   }
   @media (max-width: 600px) {
     .wrap { padding: var(--s4) var(--s2) var(--s5); }
@@ -119,7 +103,7 @@
     <div>
       <p class="eyebrow top">Python Backend Developer · Екатеринбург</p>
       <h1>Максим Колчанов</h1>
-      <p class="lead">17 лет в недвижимости: сделки, проверки, документы. С 2023 года пишу сервисы, которыми работаю сам, — боты, кабинет сделки, проверки по реестрам. Началось с простого: половину проверок можно было перестать делать руками.</p>
+      <p class="lead">17 лет в недвижимости. С 2023 года пишу сервисы, которыми работаю сам: боты, кабинеты сделки, проверки по реестрам.</p>
       <nav class="links">
         <a class="main" href="https://maksim-kolchanov.github.io/">Сайт</a>
         <a href="https://github.com/Maksim-Kolchanov">GitHub</a>
@@ -130,64 +114,55 @@
   </header>
 
   <section>
-    <h2 class="eyebrow">Коротко</h2>
+    <h2 class="eyebrow">Астрологический профиль кандидата</h2>
     <div class="astro">
-      <div class="card sign"><div class="glyph">17</div><div class="k">Опыт</div><div class="v">лет в недвижимости</div><div class="t">Сделки, проверки, документы — с 2009 года</div></div>
-      <div class="card sign"><div class="glyph">Py</div><div class="k">Код</div><div class="v">с 2023 года</div><div class="t">Python, FastAPI, aiogram, SQL, React</div></div>
-      <div class="card sign"><div class="glyph">3</div><div class="k">Продукты</div><div class="v">в работе</div><div class="t">Отчёт ЕГРН, кабинет сделки, проверка контрагента</div></div>
-      <div class="card sign"><div class="glyph">✓</div><div class="k">Принцип</div><div class="v">Проверено</div><div class="t">Готово — значит проверено, а не сделано на глаз</div></div>
+      <div class="card sign"><div class="glyph">♑</div><div class="k">Знак зодиака</div><div class="v">Козерог</div><div class="t">Доводит до продакшена, а не до демо</div></div>
+      <div class="card sign"><div class="glyph">◉</div><div class="k">Китайский год</div><div class="v">Земляной Дракон</div><div class="t">Берётся за своё и держит слово</div></div>
+      <div class="card sign"><div class="glyph">▽</div><div class="k">Стихия</div><div class="v">Земля</div><div class="t">Считает по аналогам, не по ощущению</div></div>
+      <div class="card sign"><div class="glyph">33</div><div class="k">Число пути</div><div class="v">33 / 6</div><div class="t">Системность и ответственность</div></div>
+      <div class="card score">
+        <div class="ring">
+          <svg width="128" height="128" viewBox="0 0 128 128" aria-hidden="true">
+            <circle cx="64" cy="64" r="54" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="12"/>
+            <circle cx="64" cy="64" r="54" fill="none" stroke="#9ee0b8" stroke-width="12" stroke-linecap="round"
+                    stroke-dasharray="334.8 339.3"/>
+          </svg>
+          <b>98.7%</b>
+        </div>
+        <div class="k">HR Compatibility</div>
+        <div class="t">Подтверждено астрологическим анализом культуры команды™</div>
+      </div>
     </div>
   </section>
 
   <section>
-    <h2 class="eyebrow">Что умею</h2>
+    <h2 class="eyebrow">Why this is a good fit</h2>
     <table class="fit">
       <tbody>
-      <tr><td>Постановка задачи</td><td>Формулирую задачу и критерий приёмки — от идеи до продакшена.</td></tr>
-      <tr><td>Бэкенд</td><td>Python 3.12, FastAPI, aiogram, SQL; платежи через YooKassa.</td></tr>
-      <tr><td>Интерфейсы</td><td>React, TypeScript, Mini Apps в Telegram и MAX.</td></tr>
-      <tr><td>Данные</td><td>Проверки по реестрам, отчёты, разбор PDF.</td></tr>
-      <tr><td>Дисциплина</td><td>17 лет сделок: сроки, документы, ответственность за результат.</td></tr>
+      <tr><td>Целеустремлённость<span class="sg">Козерог</span></td><td>Три продукта работают с деньгами клиентов — это не учебные проекты.</td></tr>
+      <tr><td>Терпение и порядок<span class="sg">Козерог</span></td><td>Семнадцать лет сделок: от просмотра до ключей, документы не теряются.</td></tr>
+      <tr><td>Инициатива<span class="sg">Земляной Дракон</span></td><td>ИП, клиенты напрямую: задачу ставит себе сам, а не ждёт постановки.</td></tr>
+      <tr><td>Стрессоустойчивость<span class="sg">Земля в земле</span></td><td>Решения по цифре: стоимость называет до работы — деньгами, временем, риском.</td></tr>
+      <tr><td>Совместимость<span class="sg">по знаку</span></td><td>Лучший фит — Телец, Дева, Скорпион. С Водолеем — спорить о метриках.</td></tr>
       </tbody>
     </table>
-  </section>
-
-  <section>
-    <h2 class="eyebrow">Опыт</h2>
-    <table class="fit">
-      <tbody>
-      <tr><td>2009 — сейчас</td><td>Недвижимость: ИП, сделки, проверка объекта и прав, отчёты ЕГРН, оценка по аналогам.</td></tr>
-      <tr><td>2023 — сейчас</td><td>Разработка: Python, Telegram и MAX боты, Mini Apps, оплата, деплой.</td></tr>
-      <tr><td>2024</td><td>Университет искусственного интеллекта — учёба приостановлена: практика в продуктах важнее.</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2 class="eyebrow">Без прикрас</h2>
-    <div class="nosh">
-      <div class="card" data-n="01"><b>Короны нет</b><p>Не называю себя «guru» и «senior». В шапке — имя, ниже — что сделано. Эпитеты проверять нечем, ссылки — есть.</p></div>
-      <div class="card" data-n="02"><b>ИИ не скрываю</b><p>Код печатает агент, решения и приёмку держу я — как с подрядчиком. Отвечаю за результат всё равно я один.</p></div>
-      <div class="card" data-n="03"><b>Книга без даты</b><p>Пишу третий год и дату выхода не обещаю: сам не люблю, когда обещают и переносят.</p></div>
-    </div>
-    <p class="kick">Если что-то из этого не подходит под вакансию — так и скажите, сэкономим друг другу неделю. <em>Один вопрос по делу лучше трёх про «стрессоустойчивость».</em></p>
   </section>
 
   <section class="cols">
     <div>
-      <h2 class="eyebrow">Проекты · что сделано</h2>
+      <h2 class="eyebrow">Проекты в продакшене</h2>
       <div class="proj">
-        <a class="card" href="https://maksim-kolchanov.github.io/case-egrn.html"><h3>Отчёт ЕГРН</h3><p>Отчёт из реестра за три сообщения вместо похода по сайтам, формам и почте.</p><span class="go">След →</span></a>
-        <a class="card" href="https://maksim-kolchanov.github.io/case-skan-ekspert.html"><h3>Кабинет сделки «Скан.Эксперт»</h3><p>Каталог проверок, оплата и PDF, не выходя из мессенджера.</p><span class="go">След →</span></a>
-        <a class="card" href="https://maksim-kolchanov.github.io/case-kontragent.html"><h3>Проверка контрагента</h3><p>Выжимка по второй стороне сделки за минуту вместо часа по реестрам.</p><span class="go">След →</span></a>
+        <a class="card" href="https://maksim-kolchanov.github.io/case-egrn.html"><h3>Отчёт ЕГРН</h3><p>Отчёт из реестра за три сообщения вместо похода по сайтам, формам и почте.</p><span class="go">Кейс →</span></a>
+        <a class="card" href="https://maksim-kolchanov.github.io/case-skan-ekspert.html"><h3>Кабинет сделки «Скан.Эксперт»</h3><p>Каталог проверок, оплата и PDF, не выходя из мессенджера.</p><span class="go">Кейс →</span></a>
+        <a class="card" href="https://maksim-kolchanov.github.io/case-kontragent.html"><h3>Проверка контрагента</h3><p>Выжимка по второй стороне сделки за минуту вместо часа по реестрам.</p><span class="go">Кейс →</span></a>
       </div>
     </div>
     <div class="stack">
-      <h2 class="eyebrow">Стек · на чём собрано</h2>
+      <h2 class="eyebrow">Стек</h2>
       <dl class="card">
-        <div><dt>Язык</dt><dd>Python 3.12 · FastAPI · aiogram</dd></div>
+        <div><dt>Бэкенд</dt><dd>Python 3.12 · FastAPI · aiogram</dd></div>
         <div><dt>Данные</dt><dd>SQL · SQLite · Playwright</dd></div>
-        <div><dt>Фронтенд</dt><dd>React · TypeScript · Mini Apps</dd></div>
+        <div><dt>Фронт</dt><dd>React · TypeScript · Mini Apps</dd></div>
         <div><dt>ИИ</dt><dd>DeepSeek · агент Hermes в контуре</dd></div>
         <div><dt>Каналы</dt><dd>Telegram · MAX</dd></div>
       </dl>
@@ -195,11 +170,11 @@
   </section>
 
   <section class="close">
-    <blockquote>«Готово — значит проверено»<cite>рабочее правило</cite></blockquote>
-    <div class="verdict"><b>Коротко</b>17 лет в недвижимости, с 2023 года — разработка. Три продукта работают с деньгами клиентов; задачу беру целиком: постановка, архитектура, приёмка.</div>
+    <blockquote>«Слова нужны, чтобы выразить смысл; поняв смысл, забывают о словах»<cite>— Чжуанцзы, «Внешние главы»</cite></blockquote>
+    <div class="verdict"><b>Вывод для HR</b>Козерог доделывает, Земляной Дракон берётся за своё. Сервисы, которые уже работают с деньгами клиентов, и правило «готово — значит проверено».</div>
   </section>
 
-  <footer>Отчёт ЕГРН · кабинет сделки · проверка контрагента — maksim-kolchanov.github.io · <a href="rune.html" style="color:var(--gold)">Тёмная версия →</a></footer>
+  <footer>Шуточное резюме по мотивам поста в Threads. Знак рассчитан по дате, проекты — с maksim-kolchanov.github.io. <a href="rune.html" style="color:var(--gold)">Северный вариант →</a></footer>
 </main>
 </body>
 </html>
